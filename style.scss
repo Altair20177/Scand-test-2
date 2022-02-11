@@ -98,16 +98,23 @@ header{
 		font-size: 16px;
 		line-height: 150%;
 		color: #363738;
+		transition: 0.2s;
+		&:hover{
+			letter-spacing: 2px;
+			&::after{
+				background-color: #363738;
+				width: 124px;
+			}
+		}
+		&::after{
+			content: '';
+			display: block;
+			width: 104px;
+			height: 2px;
+			background-color: #FFCE50;
+			transition: 0.2s;
+		}
 	}
-}
-
-
-.content a::after{
-	content: '';
-	display: block;
-	width: 104px;
-	height: 2px;
-	background-color: #FFCE50;
 }
 
 .image_tablet{
